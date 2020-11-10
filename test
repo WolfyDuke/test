@@ -17,7 +17,7 @@ namespace Testing
         public int a = 100, b = 200, c = 300, d = 400, e = 500,
             f = 1000, g = 2000, h = 3000, i = 4000, j = 5000, k = 10000, l = 15000, m = 30000,
             n = 10, o = 15, p = 20, q = 30, r = 60, s = 90 , charge = 0 , jailtime = 0;
-        public string charget = "", jailtimet = "";
+        public string charget = "", jailtimet = ""; //ใส่ตัวแปรราคา หลายอย่างมากๆ
 
         private void label1_Click_1(object sender, EventArgs e)
         {
