@@ -1,0 +1,286 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DKPD
+{
+    public partial class Form5 : Form
+    {
+        public static int jt = 0;
+        public static int charge = 0;
+        public static string ch = "";
+        public static string jail = "";
+        public static string name1 = " ";
+        public static string name2 = " ";
+
+        public Form5()
+        {
+            InitializeComponent();
+        }
+
+        private void checkBoxChecked(bool checkValue, int price, int jail)
+        {
+            if (checkValue)
+            {
+                charge += price;
+                jt += jail;
+            }
+            else
+            {
+                charge -= price;
+                jt -= jail;
+            }
+
+
+
+
+        }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox1.Checked, 200, 0);
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox2.Checked, 200, 0);
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox3.Checked, 200, 0);
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox1.Checked, 1000, 10);
+        }
+
+
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox5.Checked, 300, 0);
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox6.Checked, 200, 0);
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox7.Checked, 500, 10);
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox8.Checked, 500, 10);
+        }
+
+        private void checkBox9_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox9.Checked, 500, 10);
+        }
+
+        private void checkBox10_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox10.Checked, 500, 10);
+        }
+
+        private void checkBox11_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox11.Checked, 500, 10);
+        }
+
+        private void checkBox12_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox12.Checked, 500, 10);
+        }
+
+        private void checkBox13_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox13.Checked, 2000, 15);
+        }
+
+        private void checkBox14_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox14.Checked, 10000, 20);
+        }
+
+        private void checkBox15_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox15.Checked, 2000, 20);
+        }
+
+        private void checkBox16_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox16.Checked, 4000, 20);
+        }
+
+        private void checkBox17_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox17.Checked, 5000, 20);
+        }
+
+        private void checkBox18_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox18.Checked, 10000, 20);
+        }
+
+        private void checkBox19_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox19.Checked, 2000, 10);
+        }
+
+        private void checkBox20_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox20.Checked, 1000, 20);
+        }
+
+        private void checkBox21_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox21.Checked, 1000, 10);
+        }
+
+        private void checkBox22_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox22.Checked, 3000, 20);
+        }
+
+        private void checkBox23_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox23.Checked, 100, 0);
+        }
+
+        private void checkBox24_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox1.Checked, 500, 10);
+        }
+
+        private void checkBox25_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox25.Checked, 1000, 20);
+        }
+
+        private void checkBox26_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox26.Checked, 1000, 20);
+        }
+
+        private void checkBox27_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox27.Checked, 1000, 20);
+        }
+
+        private void checkBox28_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox28.Checked, 1000, 10);
+        }
+
+        private void checkBox29_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox29.Checked, 1000, 20);
+        }
+
+        private void checkBox30_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox30.Checked, 10000, 30);
+        }
+
+        private void checkBox31_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox31.Checked, 2000, 10);
+        }
+
+        private void checkBox32_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox32.Checked, 2000, 15);
+        }
+
+        private void checkBox33_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox33.Checked, 5000, 30);
+        }
+
+        private void checkBox34_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox34.Checked, 5000, 30);
+        }
+
+        private void checkBox35_CheckedChanged(object sender, EventArgs e)
+        { 
+            checkBoxChecked(checkBox35.Checked, 15000, 60);
+        }
+
+        private void checkBox36_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox36.Checked, 10000, 60);
+        }
+
+        private void checkBox37_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBoxChecked(checkBox37.Checked, 30000, 90);
+
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("You're not entering any word...");
+            }
+            else
+            {
+                MessageBox.Show("Success ! Click OK For view Information Receipt");
+                ch = "$" + charge;
+                jail = jt + "นาที";
+                name1 = textBox1.Text;
+                name2 = textBox2.Text;
+                Form6 form6 = new Form6();
+                form6.Show();
+                this.Close();
+            }
+        }
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5.ch = "";
+            Form5.jail = "";
+            Form5.charge = 0;
+            Form5.jt = 0;
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void Form5_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
