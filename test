@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Testing
+{
+    public partial class Form1 : Form
+    {
+        public string text = "";
+        public int a = 100, b = 200, c = 300, d = 400, e = 500,
+            f = 1000, g = 2000, h = 3000, i = 4000, j = 5000, k = 10000, l = 15000, m = 30000,
+            n = 10, o = 15, p = 20, q = 30, r = 60, s = 90 , charge = 0 , jailtime = 0;
+        public string charget = "", jailtimet = "";
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Text == "asd" )
+            {
+                charge += a;
+                charge += b;
+            }
+            charget = charge.ToString();
+            label1.Text = charget;
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string itemtxt = comboBox1.SelectedItem.ToString();
+            listBox1.Items.Add(itemtxt);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.listBox1.Items.Clear();
+        } 
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+        }
+    }
+}
